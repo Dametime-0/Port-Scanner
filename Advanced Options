@@ -1,0 +1,14 @@
+# Scan specific port range
+src/port_scanner.exe -p 1-65535 <target>
+
+# Set number of threads
+src/port_scanner.exe -t 100 <target>
+
+# Enable verbose output (show closed ports)
+src/port_scanner.exe -v <target>
+
+# Save results to CSV
+src/port_scanner.exe -o results.csv <target>
+
+# Combine options
+src/port_scanner.exe -p 80-443 -t 20 -v -o scan_results.csv example.com
