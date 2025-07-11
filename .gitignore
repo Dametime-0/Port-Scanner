@@ -1,0 +1,24 @@
+# product
+*.exe
+*.obj
+*.o
+*.pdb
+*.ilk
+*.lib
+*.dll
+
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.suo
+Debug/
+Release/
+
+# output
+*.csv
+
+# osfile
+.DS_Store
+Thumbs.db
