@@ -62,7 +62,9 @@ Legal Compliance: Only scan networks or devices you own or have explicit permiss
 Firewalls: Some ports may be blocked by firewalls, resulting in "filtered" status (not shown as open/closed).
 Performance: Adjust thread count based on your system capabilities (too many threads may cause network congestion).
 
-##中文
+
+##使用操作
+
 一、准备工作
 获取可执行文件
 如果你已编译好程序，会得到 port_scanner.exe（通常在 src 目录或编译输出目录）。
