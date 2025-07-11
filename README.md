@@ -15,7 +15,6 @@ A simple TCP port scanner for Windows, implemented in C++. Supports multi-thread
 ## Usage
 
 ### Basic Command
-```bash
 # Scan target with default settings (ports 1-1000, 50 threads)
 src/port_scanner.exe <target_ip_or_domain>
 
