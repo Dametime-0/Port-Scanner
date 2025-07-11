@@ -11,20 +11,12 @@ A simple TCP port scanner for Windows, implemented in C++. Supports multi-thread
 - Command-line interface with configurable options
 - Export results to CSV file
 
-
 ## Usage
 
 ### Basic Command
+```bash
 # Scan target with default settings (ports 1-1000, 50 threads)
 src/port_scanner.exe <target_ip_or_domain>
-
-
-
-
-
-
-
-Advanced Options
 
 # Scan specific port range
 src/port_scanner.exe -p 1-65535 <target>
@@ -40,7 +32,6 @@ src/port_scanner.exe -o results.csv <target>
 
 # Combine options
 src/port_scanner.exe -p 80-443 -t 20 -v -o scan_results.csv example.com
-Options List
 Option	Description
 -p, --ports	Port range (format: start-end, default: 1-1000)
 -t, --threads	Number of threads (default: 50)
@@ -53,8 +44,9 @@ Windows 10/11
 Visual Studio (2019+) or MinGW
 Winsock2 library (included with Windows SDK)
 Build with MinGW
-
 g++ src/port_scanner.cpp -o port_scanner.exe -lws2_32
+g++ src/port_scanner.cpp -o port_scanner.exe -lws2_32
+
 Build with Visual Studio
 Create a new "Empty Project"
 Add src/port_scanner.cpp to the project
